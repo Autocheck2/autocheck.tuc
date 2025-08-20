@@ -24,7 +24,7 @@ const pasos = [
   {
     numero: "03",
     icon: MapPin,
-    title: "Inspección In Situ",
+    title: "Inspección",
     description:
       "Nos trasladamos hasta donde esté el vehículo en San Miguel de Tucumán. Realizamos la inspección completa con equipos profesionales.",
     detalles: ["Nos trasladamos sin costo", "Equipos de última generación", "Inspección exhaustiva"],

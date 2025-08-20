@@ -19,7 +19,7 @@ const zonas = [
 export default function Cobertura() {
   const handleWhatsAppClick = () => {
     const message = "Hola! Me interesa el servicio de inspección de AutoChek. ¿Podrían brindarme más información?"
-    const whatsappUrl = `https://wa.me/5493814123456?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/5493815121038?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
 
@@ -117,11 +117,7 @@ export default function Cobertura() {
                 <div className="space-y-4">
                   <div>
                     <p className="text-muted-foreground mb-2">WhatsApp (Recomendado)</p>
-                    <p className="font-medium text-foreground">+54 9 381 412-3456</p>
-                  </div>
-                  <div>
-                    <p className="text-muted-foreground mb-2">Teléfono</p>
-                    <p className="font-medium text-foreground">0381 412-3456</p>
+                    <p className="font-medium text-foreground">+54 9 381 512-1038</p>
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-2">Email</p>
