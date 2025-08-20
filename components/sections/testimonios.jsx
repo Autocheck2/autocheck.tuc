@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const testimonios = [
   {
-    nombre: "Carlos Mendoza",
+    nombre: "Carlos",
     ubicacion: "San Miguel de Tucumán",
     rating: 5,
     testimonio:
@@ -14,44 +14,20 @@ const testimonios = [
     vehiculo: "Toyota Corolla 2018",
   },
   {
-    nombre: "María González",
+    nombre: "María",
     ubicacion: "Yerba Buena",
     rating: 5,
     testimonio:
       "Muy profesionales y detallados. El informe que me entregaron tenía fotos y explicaciones muy claras. Gracias a ellos compré mi auto con total tranquilidad.",
-    vehiculo: "Honda Civic 2019",
+    vehiculo: "Fiat Palio 2019",
   },
   {
-    nombre: "Roberto Silva",
-    ubicacion: "Las Talitas",
+    nombre: "Roberto",
+    ubicacion: "Tafí Viejo",
     rating: 5,
     testimonio:
       "Se trasladaron hasta donde estaba el auto sin problemas. La inspección fue muy completa y me explicaron todo de manera sencilla. Excelente atención.",
     vehiculo: "Volkswagen Vento 2017",
-  },
-  {
-    nombre: "Ana Rodríguez",
-    ubicacion: "Tafí Viejo",
-    rating: 5,
-    testimonio:
-      "Contraté el servicio por recomendación y superó mis expectativas. Muy honestos y transparentes. El informe de dominio me dio mucha seguridad.",
-    vehiculo: "Chevrolet Onix 2020",
-  },
-  {
-    nombre: "Diego Herrera",
-    ubicacion: "San Miguel de Tucumán",
-    rating: 5,
-    testimonio:
-      "Increíble el nivel de detalle de la inspección. Detectaron fallas que ni el vendedor sabía que existían. Definitivamente los volvería a contratar.",
-    vehiculo: "Ford Focus 2016",
-  },
-  {
-    nombre: "Lucía Morales",
-    ubicacion: "Banda del Río Salí",
-    rating: 5,
-    testimonio:
-      "Servicio impecable. Me asesoraron durante todo el proceso y me dieron recomendaciones muy valiosas. Compré mi auto con total confianza.",
-    vehiculo: "Renault Logan 2019",
   },
 ]
 
@@ -128,7 +104,7 @@ export default function Testimonios() {
             <CardContent className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
                   <div className="text-muted-foreground">Inspecciones Realizadas</div>
                 </div>
                 <div>

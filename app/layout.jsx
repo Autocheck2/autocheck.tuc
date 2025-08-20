@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.variable} ${poppins.variable} antialiased min-h-screen`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem={false}
           disableTransitionOnChange={false}
           storageKey="autochek-theme"

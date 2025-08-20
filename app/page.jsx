@@ -7,6 +7,7 @@ import Proceso from "@/components/sections/proceso"
 import PorQueAutoChek from "@/components/sections/por-que-autochek"
 import Testimonios from "@/components/sections/testimonios"
 import Cobertura from "@/components/sections/cobertura"
+import GaleriaTrabajo from "@/components/sections/galeria-trabajo"
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Servicios />
       <QuienesSomos />
       <Proceso />
+      <GaleriaTrabajo />
       <PorQueAutoChek />
       <Testimonios />
       <Cobertura />

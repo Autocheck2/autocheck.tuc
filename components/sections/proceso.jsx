@@ -41,7 +41,7 @@ const pasos = [
 
 export default function Proceso() {
   return (
-    <section id="proceso" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="proceso" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 pb-40">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -108,26 +108,6 @@ export default function Proceso() {
           </div>
         </div>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <Card className="bg-primary/5 border-primary/20 max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">¿Listo para inspeccionar tu próximo auto?</h3>
-              <p className="text-muted-foreground mb-6">
-                Nos trasladamos a donde esté el vehículo dentro de San Miguel de Tucumán
-              </p>
-              <div className="flex items-center justify-center text-primary font-medium">
-                <MapPin className="h-5 w-5 mr-2" />
-                Cobertura: San Miguel de Tucumán y alrededores
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
       </div>
     </section>
   )

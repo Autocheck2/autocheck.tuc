@@ -52,11 +52,10 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-lg"
-          : "bg-background/80 backdrop-blur-md border-b border-border/50"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-lg"
+        : "bg-black/20 backdrop-blur-md border-b border-white/10"
+        }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -80,17 +79,20 @@ export default function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 + 0.3 }}
                   onClick={() => handleNavClick(item.href)}
-                  className={`relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
-                    activeSection === item.href.slice(1)
+                  className={`relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${activeSection === item.href.slice(1)
+                    ? scrolled
                       ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
+                      : "text-white font-semibold"
+                    : scrolled
+                      ? "text-muted-foreground hover:text-foreground"
+                      : "text-white/80 hover:text-white"
+                    }`}
                 >
                   {item.name}
                   {activeSection === item.href.slice(1) && (
                     <motion.div
                       layoutId="activeIndicator"
-                      className="absolute inset-0 bg-primary/10 rounded-md"
+                      className={`absolute inset-0 rounded-md ${scrolled ? "bg-primary/10" : "bg-white/20"}`}
                       initial={false}
                       transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     />
@@ -107,7 +109,8 @@ export default function Header() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="w-9 h-9 p-0 hover:bg-accent"
+                className={`w-9 h-9 p-0 transition-colors duration-200 ${scrolled ? "hover:bg-accent text-foreground" : "hover:bg-white/20 text-white"
+                  }`}
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -126,7 +129,8 @@ export default function Header() {
             {/* Mobile menu button */}
             <div className="md:hidden">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)} className="w-9 h-9 p-0">
+                <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)} className={`w-9 h-9 p-0 transition-colors duration-200 ${scrolled ? "hover:bg-accent text-foreground" : "hover:bg-white/20 text-white"
+                  }`}>
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={isOpen ? "close" : "open"}
@@ -154,7 +158,12 @@ export default function Header() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="md:hidden overflow-hidden"
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-card/50 backdrop-blur-sm border-t border-border rounded-b-lg">
+              <div
+                className={`px-2 pt-2 pb-3 space-y-1 border-t rounded-b-lg transition-colors duration-200 ${scrolled
+                  ? "bg-card/50 backdrop-blur-sm border-border"
+                  : "bg-black/30 backdrop-blur-md border-white/20"
+                  }`}
+              >
                 {navigation.map((item, index) => (
                   <motion.button
                     key={item.name}
@@ -162,11 +171,14 @@ export default function Header() {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: index * 0.1 }}
                     onClick={() => handleNavClick(item.href)}
-                    className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all duration-200 ${
-                      activeSection === item.href.slice(1)
-                        ? "text-primary bg-primary/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                    }`}
+                    className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all duration-200 ${activeSection === item.href.slice(1)
+                        ? scrolled
+                          ? "text-primary bg-primary/10"
+                          : "text-white bg-white/20 font-semibold"
+                        : scrolled
+                          ? "text-muted-foreground hover:text-foreground hover:bg-accent"
+                          : "text-white/80 hover:text-white hover:bg-white/10"
+                      }`}
                   >
                     {item.name}
                   </motion.button>

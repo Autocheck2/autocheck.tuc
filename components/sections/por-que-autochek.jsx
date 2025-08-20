@@ -7,9 +7,9 @@ import { Card, CardContent } from "@/components/ui/card"
 const razones = [
   {
     icon: Users,
-    title: "Técnicos con Experiencia",
-    description: "Nuestro equipo cuenta con años de experiencia en el rubro automotriz y capacitación continua.",
-    stats: "+10 años de experiencia",
+    title: "Atención personalizada",
+    description: "Atención directa y sin intermediarios: diagnóstico honesto, soluciones claras y seguimiento hasta que quedes conforme.",
+    stats: "Un técnico dedicado a tu vehículo",
   },
   {
     icon: Wrench,

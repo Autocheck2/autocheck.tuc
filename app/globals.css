@@ -4,76 +4,78 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Tema Claro - AutoChek */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0); /* Azul profesional */
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0); /* Azul-violeta elegante */
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  /* Tema Claro - AutoChek Moderno y Elegante */
+  --card: oklch(0.99 0.005 240); /* Blanco con tinte azul muy sutil */
+  --card-foreground: oklch(0.15 0.02 240);
+  --popover: oklch(0.99 0.005 240);
+  --popover-foreground: oklch(0.15 0.02 240);
+  --primary: oklch(0.45 0.15 240); /* Azul elegante y moderno */
+  --primary-foreground: oklch(0.98 0.005 240);
+  --secondary: oklch(0.92 0.03 280); /* Lavanda suave */
+  --secondary-foreground: oklch(0.25 0.05 240);
+  --muted: oklch(0.95 0.01 220); /* Gris azulado muy claro */
+  --muted-foreground: oklch(0.55 0.02 240);
+  --accent: oklch(0.88 0.08 320); /* Rosa-púrpura elegante */
+  --accent-foreground: oklch(0.2 0.05 240);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.9 0.02 240); /* Bordes con tinte azul */
+  --input: oklch(0.96 0.01 240);
+  --ring: oklch(0.45 0.15 240);
   --radius: 0.625rem;
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* Colores de gráficos más vibrantes y modernos */
+  --chart-1: oklch(0.55 0.18 260); /* Azul vibrante */
+  --chart-2: oklch(0.65 0.15 320); /* Púrpura elegante */
+  --chart-3: oklch(0.6 0.12 200); /* Cian moderno */
+  --chart-4: oklch(0.7 0.16 140); /* Verde esmeralda */
+  --chart-5: oklch(0.75 0.14 60); /* Dorado elegante */
+  --sidebar: oklch(0.97 0.01 240);
+  --sidebar-foreground: oklch(0.2 0.03 240);
+  --sidebar-primary: oklch(0.45 0.15 240);
+  --sidebar-primary-foreground: oklch(0.98 0.005 240);
+  --sidebar-accent: oklch(0.92 0.03 280);
+  --sidebar-accent-foreground: oklch(0.25 0.05 240);
+  --sidebar-border: oklch(0.9 0.02 240);
+  --sidebar-ring: oklch(0.45 0.15 240);
+  --background: oklch(0.98 0.005 240); /* Fondo con tinte azul muy sutil */
+  --foreground: oklch(0.15 0.02 240);
 }
 
 .dark {
-  /* Tema Oscuro - AutoChek */
-  --background: oklch(0.145 0 0); /* Gris muy oscuro elegante */
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0); /* Azul brillante */
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0); /* Azul-violeta suave */
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Tema Oscuro Moderno y Elegante - AutoChek */
+  --background: oklch(0.08 0.01 240); /* Negro azulado profundo */
+  --foreground: oklch(0.95 0.005 240); /* Blanco con tinte azul sutil */
+  --card: oklch(0.12 0.015 240); /* Gris oscuro con tinte azul */
+  --card-foreground: oklch(0.95 0.005 240);
+  --popover: oklch(0.12 0.015 240);
+  --popover-foreground: oklch(0.95 0.005 240);
+  --primary: oklch(0.65 0.2 260); /* Azul cian vibrante */
+  --primary-foreground: oklch(0.08 0.01 240);
+  --secondary: oklch(0.18 0.05 280); /* Púrpura oscuro elegante */
+  --secondary-foreground: oklch(0.85 0.08 280);
+  --muted: oklch(0.15 0.02 240); /* Gris azulado oscuro */
+  --muted-foreground: oklch(0.65 0.03 240);
+  --accent: oklch(0.22 0.08 320); /* Rosa-púrpura oscuro */
+  --accent-foreground: oklch(0.9 0.12 320);
+  --destructive: oklch(0.65 0.2 25); /* Rojo coral moderno */
+  --destructive-foreground: oklch(0.95 0.005 240);
+  --border: oklch(0.2 0.03 240); /* Bordes con tinte azul */
+  --input: oklch(0.16 0.02 240);
+  --ring: oklch(0.65 0.2 260);
+  /* Colores de gráficos vibrantes para tema oscuro */
+  --chart-1: oklch(0.65 0.2 260); /* Azul cian brillante */
+  --chart-2: oklch(0.7 0.18 320); /* Magenta vibrante */
+  --chart-3: oklch(0.75 0.15 180); /* Verde esmeralda */
+  --chart-4: oklch(0.8 0.16 60); /* Amarillo dorado */
+  --chart-5: oklch(0.72 0.2 340); /* Rosa fucsia */
+  --sidebar: oklch(0.12 0.015 240);
+  --sidebar-foreground: oklch(0.95 0.005 240);
+  --sidebar-primary: oklch(0.65 0.2 260);
+  --sidebar-primary-foreground: oklch(0.08 0.01 240);
+  --sidebar-accent: oklch(0.18 0.05 280);
+  --sidebar-accent-foreground: oklch(0.85 0.08 280);
+  --sidebar-border: oklch(0.2 0.03 240);
+  --sidebar-ring: oklch(0.65 0.2 260);
 }
 
 @theme inline {
@@ -306,13 +308,4 @@ html {
 .focus-visible:focus-visible {
   outline: 2px solid hsl(var(--primary));
   outline-offset: 2px;
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }

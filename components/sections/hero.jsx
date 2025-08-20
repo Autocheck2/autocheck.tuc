@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Shield, CheckCircle, Star, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Hero() {
   const scrollToSection = (href) => {
@@ -13,54 +14,50 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8"
-          >
-            <Shield className="h-4 w-4 mr-2" />
-            Servicio 100% Imparcial y Profesional
-          </motion.div>
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-background.png"
+          alt="AutoChek background"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/75" />
+      </div>
 
+      {/* Content with higher z-index */}
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center">
           {/* Título Principal */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white mb-6 drop-shadow-lg"
           >
-            Comprá tranquilidad con <span className="text-primary">autochek</span>
+            Antes de comprar tu próximo usado, <span className="text-primary">autochek</span>
           </motion.h1>
-
-          {/* Subtítulo */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
-          >
-            La compra de un auto usado es un sueño, pero más de la mitad presenta problemas ocultos.
-            <span className="text-foreground font-medium"> Detectarlos antes de pagar es nuestro trabajo.</span>
-          </motion.p>
 
           {/* Beneficios */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-wrap justify-center gap-6 mb-10"
+            className="flex flex-wrap justify-center gap-6 mb-10 mt-10"
           >
             {[
               "Inspección técnica completa",
               "Informe detallado con fotos",
               "Nos trasladamos a donde esté el vehículo",
             ].map((benefit, index) => (
-              <div key={index} className="flex items-center text-muted-foreground">
+              <div key={index} className="flex items-center text-gray-200 drop-shadow-sm">
                 <CheckCircle className="h-5 w-5 text-primary mr-2" />
                 <span>{benefit}</span>
               </div>
@@ -86,27 +83,7 @@ export default function Hero() {
               Cómo Funciona
             </Button>
           </motion.div>
-
-          {/* Badges de Confianza */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
-            className="flex flex-wrap justify-center gap-8 text-muted-foreground"
-          >
-            <div className="flex items-center">
-              <Star className="h-5 w-5 text-yellow-500 mr-2" />
-              <span className="text-sm">+500 inspecciones realizadas</span>
-            </div>
-            <div className="flex items-center">
-              <Award className="h-5 w-5 text-primary mr-2" />
-              <span className="text-sm">Técnicos certificados</span>
-            </div>
-            <div className="flex items-center">
-              <Shield className="h-5 w-5 text-green-500 mr-2" />
-              <span className="text-sm">100% de satisfacción</span>
-            </div>
-          </motion.div>
+      
         </div>
       </div>
     </section>

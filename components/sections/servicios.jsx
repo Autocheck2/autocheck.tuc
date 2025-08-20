@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Scan, AlertTriangle, Shield, Cog, FileText, CheckCircle } from "lucide-react"
+import { Scan, AlertTriangle, Shield, Cog, FileText, CheckCircle, Gauge } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const servicios = [
@@ -24,10 +24,10 @@ const servicios = [
     features: ["Sistema ABS", "Pastillas y discos", "Líquido de frenos"],
   },
   {
-    icon: Cog,
-    title: "Revisión Caja Automática",
-    description: "Diagnóstico especializado para transmisiones automáticas y sus componentes",
-    features: ["Cambios suaves", "Niveles de aceite", "Sensores de velocidad"],
+    icon: Gauge,
+    title: "Verificación de Quilómetros Reales",
+    description: "Análisis técnico para detectar manipulación del odómetro y confirmar el kilometraje real",
+    features: ["Historial de mantenimientos", "Desgaste coherente", "Verificación electrónica"],
   },
   {
     icon: FileText,
