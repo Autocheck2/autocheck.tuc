@@ -64,7 +64,7 @@ export default function Header() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex-shrink-0">
             <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-start">
               <span className="text-2xl font-bold font-heading text-primary hover:text-primary/80 transition-colors duration-200">
-                autochek
+                AutoCheck
               </span>
               <span
                 className={`text-xs font-normal transition-colors duration-200 ${

@@ -65,24 +65,6 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Beneficios */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="flex flex-wrap justify-center gap-6 mb-10 mt-10"
-          >
-            {[
-              "Inspección técnica completa",
-              "Informe detallado con fotos",
-              "Nos trasladamos a donde esté el vehículo",
-            ].map((benefit, index) => (
-              <div key={index} className="flex items-center text-gray-200 drop-shadow-sm">
-                <CheckCircle className="h-5 w-5 text-primary mr-2" />
-                <span>{benefit}</span>
-              </div>
-            ))}
-          </motion.div>
 
           {/* CTAs */}
           <motion.div
