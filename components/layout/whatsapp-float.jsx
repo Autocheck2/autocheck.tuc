@@ -6,7 +6,7 @@ import { MessageCircle, X } from "lucide-react"
 
 export default function WhatsAppFloat() {
   const [showTooltip, setShowTooltip] = useState(false)
-  const phoneNumber = "5493815121038" // Número de WhatsApp de AutoChek
+  const phoneNumber = "3816654204" // Número de WhatsApp de AutoChek
   const message =
     "Hola! Me interesa el servicio de inspección pre-compra de AutoChek. ¿Podrían brindarme más información?"
 

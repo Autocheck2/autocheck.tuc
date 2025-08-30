@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MapPin, Clock, Phone, CheckCircle } from "lucide-react"
+import { MapPin, Clock, Phone, CheckCircle, Instagram, Facebook } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
@@ -19,7 +19,7 @@ const zonas = [
 export default function Cobertura() {
   const handleWhatsAppClick = () => {
     const message = "Hola! Me interesa el servicio de inspección de AutoChek. ¿Podrían brindarme más información?"
-    const whatsappUrl = `https://wa.me/5493815121038?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/3816654204?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
 
@@ -117,11 +117,36 @@ export default function Cobertura() {
                 <div className="space-y-4">
                   <div>
                     <p className="text-muted-foreground mb-2">WhatsApp (Recomendado)</p>
-                    <p className="font-medium text-foreground">+54 9 381 512-1038</p>
+                    <p className="font-medium text-foreground">+54 9 381 665-4204</p>
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-2">Email</p>
                     <p className="font-medium text-foreground">info@autochek.com.ar</p>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground mb-3">Síguenos en redes sociales</p>
+                    <div className="flex space-x-3">
+                      <motion.a
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        href="https://instagram.com/autochek.tucuman"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                      >
+                        <Instagram className="h-5 w-5" />
+                      </motion.a>
+                      <motion.a
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        href="https://facebook.com/autochek.tucuman"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"
+                      >
+                        <Facebook className="h-5 w-5" />
+                      </motion.a>
+                    </div>
                   </div>
                 </div>
               </CardContent>

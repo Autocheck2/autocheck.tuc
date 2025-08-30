@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, CheckCircle, Star, Award } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -42,8 +42,28 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white mb-6 drop-shadow-lg"
           >
-            Antes de comprar tu próximo usado, <span className="text-primary">autochek</span>
+            Antes de comprar tu próximo usado, <span className="text-primary">AutoCheck</span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mb-8"
+          >
+            <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-1">$49.999</div>
+                <div className="text-sm text-gray-300">Inspección Completa</div>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-white/30"></div>
+              <div className="text-white/80 text-sm">+</div>
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">$14.999</div>
+                <div className="text-sm text-gray-300">Informe de Dominio</div>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Beneficios */}
           <motion.div
@@ -83,7 +103,6 @@ export default function Hero() {
               Cómo Funciona
             </Button>
           </motion.div>
-      
         </div>
       </div>
     </section>

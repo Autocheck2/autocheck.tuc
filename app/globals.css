@@ -5,77 +5,79 @@
 
 :root {
   /* Tema Claro - AutoChek Moderno y Elegante */
-  --card: oklch(0.99 0.005 240); /* Blanco con tinte azul muy sutil */
-  --card-foreground: oklch(0.15 0.02 240);
-  --popover: oklch(0.99 0.005 240);
-  --popover-foreground: oklch(0.15 0.02 240);
-  --primary: oklch(0.45 0.15 240); /* Azul elegante y moderno */
-  --primary-foreground: oklch(0.98 0.005 240);
-  --secondary: oklch(0.92 0.03 280); /* Lavanda suave */
-  --secondary-foreground: oklch(0.25 0.05 240);
-  --muted: oklch(0.95 0.01 220); /* Gris azulado muy claro */
-  --muted-foreground: oklch(0.55 0.02 240);
-  --accent: oklch(0.88 0.08 320); /* Rosa-púrpura elegante */
-  --accent-foreground: oklch(0.2 0.05 240);
+  --card: oklch(0.99 0.005 60); /* Blanco con tinte naranja muy sutil */
+  --card-foreground: oklch(0.15 0.02 60);
+  --popover: oklch(0.99 0.005 60);
+  --popover-foreground: oklch(0.15 0.02 60);
+  /* Cambiando color primario de azul a naranja del logo */
+  --primary: oklch(0.65 0.18 35); /* Naranja vibrante del logo */
+  --primary-foreground: oklch(0.98 0.005 60);
+  --secondary: oklch(0.92 0.03 50); /* Naranja suave */
+  --secondary-foreground: oklch(0.25 0.05 60);
+  --muted: oklch(0.95 0.01 40); /* Gris con tinte naranja muy claro */
+  --muted-foreground: oklch(0.55 0.02 60);
+  --accent: oklch(0.88 0.08 25); /* Naranja-rojo elegante */
+  --accent-foreground: oklch(0.2 0.05 60);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.9 0.02 240); /* Bordes con tinte azul */
-  --input: oklch(0.96 0.01 240);
-  --ring: oklch(0.45 0.15 240);
+  --border: oklch(0.9 0.02 60); /* Bordes con tinte naranja */
+  --input: oklch(0.96 0.01 60);
+  --ring: oklch(0.65 0.18 35);
   --radius: 0.625rem;
-  /* Colores de gráficos más vibrantes y modernos */
-  --chart-1: oklch(0.55 0.18 260); /* Azul vibrante */
-  --chart-2: oklch(0.65 0.15 320); /* Púrpura elegante */
-  --chart-3: oklch(0.6 0.12 200); /* Cian moderno */
-  --chart-4: oklch(0.7 0.16 140); /* Verde esmeralda */
-  --chart-5: oklch(0.75 0.14 60); /* Dorado elegante */
-  --sidebar: oklch(0.97 0.01 240);
-  --sidebar-foreground: oklch(0.2 0.03 240);
-  --sidebar-primary: oklch(0.45 0.15 240);
-  --sidebar-primary-foreground: oklch(0.98 0.005 240);
-  --sidebar-accent: oklch(0.92 0.03 280);
-  --sidebar-accent-foreground: oklch(0.25 0.05 240);
-  --sidebar-border: oklch(0.9 0.02 240);
-  --sidebar-ring: oklch(0.45 0.15 240);
-  --background: oklch(0.98 0.005 240); /* Fondo con tinte azul muy sutil */
-  --foreground: oklch(0.15 0.02 240);
+  /* Colores de gráficos actualizados con tonos naranjas */
+  --chart-1: oklch(0.65 0.18 35); /* Naranja vibrante */
+  --chart-2: oklch(0.7 0.15 50); /* Naranja dorado */
+  --chart-3: oklch(0.6 0.12 20); /* Rojo-naranja */
+  --chart-4: oklch(0.7 0.16 140); /* Verde esmeralda (contraste) */
+  --chart-5: oklch(0.75 0.14 60); /* Amarillo dorado */
+  --sidebar: oklch(0.97 0.01 60);
+  --sidebar-foreground: oklch(0.2 0.03 60);
+  --sidebar-primary: oklch(0.65 0.18 35);
+  --sidebar-primary-foreground: oklch(0.98 0.005 60);
+  --sidebar-accent: oklch(0.92 0.03 50);
+  --sidebar-accent-foreground: oklch(0.25 0.05 60);
+  --sidebar-border: oklch(0.9 0.02 60);
+  --sidebar-ring: oklch(0.65 0.18 35);
+  --background: oklch(0.98 0.005 60); /* Fondo con tinte naranja muy sutil */
+  --foreground: oklch(0.15 0.02 60);
 }
 
 .dark {
   /* Tema Oscuro Moderno y Elegante - AutoChek */
-  --background: oklch(0.08 0.01 240); /* Negro azulado profundo */
-  --foreground: oklch(0.95 0.005 240); /* Blanco con tinte azul sutil */
-  --card: oklch(0.12 0.015 240); /* Gris oscuro con tinte azul */
-  --card-foreground: oklch(0.95 0.005 240);
-  --popover: oklch(0.12 0.015 240);
-  --popover-foreground: oklch(0.95 0.005 240);
-  --primary: oklch(0.65 0.2 260); /* Azul cian vibrante */
-  --primary-foreground: oklch(0.08 0.01 240);
-  --secondary: oklch(0.18 0.05 280); /* Púrpura oscuro elegante */
-  --secondary-foreground: oklch(0.85 0.08 280);
-  --muted: oklch(0.15 0.02 240); /* Gris azulado oscuro */
-  --muted-foreground: oklch(0.65 0.03 240);
-  --accent: oklch(0.22 0.08 320); /* Rosa-púrpura oscuro */
-  --accent-foreground: oklch(0.9 0.12 320);
+  --background: oklch(0.08 0.01 60); /* Negro con tinte naranja profundo */
+  --foreground: oklch(0.95 0.005 60); /* Blanco con tinte naranja sutil */
+  --card: oklch(0.12 0.015 60); /* Gris oscuro con tinte naranja */
+  --card-foreground: oklch(0.95 0.005 60);
+  --popover: oklch(0.12 0.015 60);
+  --popover-foreground: oklch(0.95 0.005 60);
+  /* Color primario oscuro cambiado a naranja brillante */
+  --primary: oklch(0.7 0.2 35); /* Naranja brillante para tema oscuro */
+  --primary-foreground: oklch(0.08 0.01 60);
+  --secondary: oklch(0.18 0.05 50); /* Naranja oscuro elegante */
+  --secondary-foreground: oklch(0.85 0.08 50);
+  --muted: oklch(0.15 0.02 60); /* Gris con tinte naranja oscuro */
+  --muted-foreground: oklch(0.65 0.03 60);
+  --accent: oklch(0.22 0.08 25); /* Rojo-naranja oscuro */
+  --accent-foreground: oklch(0.9 0.12 25);
   --destructive: oklch(0.65 0.2 25); /* Rojo coral moderno */
-  --destructive-foreground: oklch(0.95 0.005 240);
-  --border: oklch(0.2 0.03 240); /* Bordes con tinte azul */
-  --input: oklch(0.16 0.02 240);
-  --ring: oklch(0.65 0.2 260);
-  /* Colores de gráficos vibrantes para tema oscuro */
-  --chart-1: oklch(0.65 0.2 260); /* Azul cian brillante */
-  --chart-2: oklch(0.7 0.18 320); /* Magenta vibrante */
-  --chart-3: oklch(0.75 0.15 180); /* Verde esmeralda */
+  --destructive-foreground: oklch(0.95 0.005 60);
+  --border: oklch(0.2 0.03 60); /* Bordes con tinte naranja */
+  --input: oklch(0.16 0.02 60);
+  --ring: oklch(0.7 0.2 35);
+  /* Colores de gráficos vibrantes para tema oscuro con naranjas */
+  --chart-1: oklch(0.7 0.2 35); /* Naranja brillante */
+  --chart-2: oklch(0.75 0.18 50); /* Naranja dorado vibrante */
+  --chart-3: oklch(0.65 0.15 20); /* Rojo-naranja */
   --chart-4: oklch(0.8 0.16 60); /* Amarillo dorado */
-  --chart-5: oklch(0.72 0.2 340); /* Rosa fucsia */
-  --sidebar: oklch(0.12 0.015 240);
-  --sidebar-foreground: oklch(0.95 0.005 240);
-  --sidebar-primary: oklch(0.65 0.2 260);
-  --sidebar-primary-foreground: oklch(0.08 0.01 240);
-  --sidebar-accent: oklch(0.18 0.05 280);
-  --sidebar-accent-foreground: oklch(0.85 0.08 280);
-  --sidebar-border: oklch(0.2 0.03 240);
-  --sidebar-ring: oklch(0.65 0.2 260);
+  --chart-5: oklch(0.72 0.2 340); /* Rosa fucsia (contraste) */
+  --sidebar: oklch(0.12 0.015 60);
+  --sidebar-foreground: oklch(0.95 0.005 60);
+  --sidebar-primary: oklch(0.7 0.2 35);
+  --sidebar-primary-foreground: oklch(0.08 0.01 60);
+  --sidebar-accent: oklch(0.18 0.05 50);
+  --sidebar-accent-foreground: oklch(0.85 0.08 50);
+  --sidebar-border: oklch(0.2 0.03 60);
+  --sidebar-ring: oklch(0.7 0.2 35);
 }
 
 @theme inline {
@@ -160,10 +162,10 @@ html {
 @keyframes pulse-glow {
   0%,
   100% {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 30px rgba(255, 107, 53, 0.6);
   }
 }
 
