@@ -121,7 +121,7 @@ export default function Cobertura() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-2">Email</p>
-                    <p className="font-medium text-foreground">info@autochek.com.ar</p>
+                    <p className="font-medium text-foreground">autocheck.tuc@gmail.com</p>
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-3">Síguenos en redes sociales</p>
@@ -139,7 +139,7 @@ export default function Cobertura() {
                       <motion.a
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        href="https://facebook.com/autochek.tucuman"
+                        href="https://www.facebook.com/share/175vL7iZAq/?mibextid=wwXIfr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"

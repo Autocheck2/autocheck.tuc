@@ -64,7 +64,7 @@ export default function Header() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex-shrink-0">
             <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-start">
               <span className="text-2xl font-bold font-heading text-primary hover:text-primary/80 transition-colors duration-200">
-                AutocheCk
+                AutoCheck
               </span>
               <span
                 className={`text-xs font-normal transition-colors duration-200 ${
@@ -130,7 +130,7 @@ export default function Header() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://facebook.com/autochek.tucuman"
+                href="https://www.facebook.com/share/175vL7iZAq/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`p-2 rounded-full transition-all duration-200 ${
@@ -247,7 +247,7 @@ export default function Header() {
                   <motion.a
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://facebook.com/autochek.tucuman"
+                    href="https://www.facebook.com/share/175vL7iZAq/?mibextid=wwXIfr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"
