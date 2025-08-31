@@ -129,7 +129,7 @@ export default function Cobertura() {
                       <motion.a
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        href="https://instagram.com/autochek.tucuman"
+                        href="https://www.instagram.com/autocheck.tuc/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"

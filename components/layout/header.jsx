@@ -64,7 +64,7 @@ export default function Header() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex-shrink-0">
             <button onClick={() => handleNavClick("#hero")} className="flex flex-col items-start">
               <span className="text-2xl font-bold font-heading text-primary hover:text-primary/80 transition-colors duration-200">
-                AutoCheck
+                AutocheCk
               </span>
               <span
                 className={`text-xs font-normal transition-colors duration-200 ${
@@ -116,7 +116,7 @@ export default function Header() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://instagram.com/autochek.tucuman"
+                href="https://www.instagram.com/autocheck.tuc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`p-2 rounded-full transition-all duration-200 ${
@@ -237,14 +237,10 @@ export default function Header() {
                   <motion.a
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://instagram.com/autochek.tucuman"
+                    href="https://www.instagram.com/autocheck.tuc/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-2 rounded-full transition-all duration-200 ${
-                      scrolled
-                        ? "text-muted-foreground hover:text-primary hover:bg-primary/10"
-                        : "text-white/70 hover:text-white hover:bg-white/10"
-                    }`}
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"
                   >
                     <Instagram className="h-5 w-5" />
                   </motion.a>
@@ -254,11 +250,7 @@ export default function Header() {
                     href="https://facebook.com/autochek.tucuman"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-2 rounded-full transition-all duration-200 ${
-                      scrolled
-                        ? "text-muted-foreground hover:text-primary hover:bg-primary/10"
-                        : "text-white/70 hover:text-white hover:bg-white/10"
-                    }`}
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200"
                   >
                     <Facebook className="h-5 w-5" />
                   </motion.a>
